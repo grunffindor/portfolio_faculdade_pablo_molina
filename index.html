@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Arquivo principal -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Molina | Sobre Mim</title>
+    
+    <!-- Link  para o CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Puxei essa referencia de fonte para deixar mais bonito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+Cabecalho
+    -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- Logo volta para tela inicial  -->
+                <a href="index.html">PM.</a>
+            </div>
+            <nav>
+                <!-- Botão para responsividade em celulares -->
+                <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+                <!-- Lista navegacao -->
+                <ul id="menu">
+                    <li><a href="index.html" class="active">Sobre Mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <!-- dark mode -->
+                <label for="theme-toggle" class="switch-label">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção sobre mim  -->
+        <section id="sobre" class="content-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h1>Olá, eu sou o Pablo Molina</h1>
+                        <h2>Analista de Dados & Desenvolvedor em Formação</h2>
+                        <p>
+                            Profissional com 9 anos de carreira trabalhando na área de dados e planejamento em empresas de Cobrança e Contact Center.
+                             Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Uninter para aprimorar minhas habilidades, formalizar 
+                            meu conhecimento e entrar cada vez mais no mundo da Técnologia.
+                        </p>
+                        <p>
+                            Sou apaixonado por Matemática, Física, Xadrez, Games e, claro, Tecnologia. Estou sempre buscando novos desafios para aplicar a lógica e aprender mais.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <!-- POderia por uma foto mas preferi deixar só uma letra -->
+                        <img src="https://placehold.co/400x400/2d3748/edf2f7?text=Pablo" alt="Foto perfil">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+       rodapé
+    -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pablo Roberto Grabarski Molina. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- 
+       Link para java script , coloca-se ao final para ser mais otimizado o carregar da pagina
+    -->
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- pagina de portfolios-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Molina | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- cabecalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">PM.</a>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+                <ul id="menu">
+                    <li><a href="index.html">Sobre Mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html" class="active">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <label for="theme-toggle" class="switch-label">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio" class="content-section">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <!-- grade -->
+                <div class="portfolio-grid">
+                    
+                    
+                    <div class="card portfolio-item">
+                        <img src="https://placehold.co/600x400/4299e1/ffffff?text=Portfólio+Web" >
+                        <h3>Site de Portfólio Pessoal</h3>
+                        <p>Site de Portfolio, desenvolvido como projeto de faculdade, foi criado do zero usando apenas HTML5, CSS3 e JavaScript.</p>
+                        <a href="#" class="btn">Ver no GitHub</a>
+                    </div>
+
+                    
+                    <div class="card portfolio-item">
+                        <img src="https://placehold.co/600x400/4299e1/ffffff?text=Sudoku+Solver" >
+                        <h3>Resolvedor de Sudoku em Python</h3>
+                        <p>Um script em Python desenvolvido por hobby que utiliza tetativa e erro para resolver sudoku. Cuidado pois não é uma aplicação e sim apenas o código python</p>
+                        <a href="#" class="btn">Ver no GitHub</a>
+                    </div>
+                    
+                    <div class="card portfolio-item">
+                        <img src="https://placehold.co/600x400/4299e1/ffffff?text=Futuro+Projeto" >
+                        <h3>Futuro Projeto</h3>
+                        <p>Um novo projeto pode estar vindo ai !! Acompanhe próximos capitulos</p>
+                        <a href="#" class="btn">Ver no GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodape-->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pablo Roberto Grabarski Molina. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

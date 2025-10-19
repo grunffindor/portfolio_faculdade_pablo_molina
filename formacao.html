@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Pgina formação -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Molina | Formação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CAbecalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">PM.</a>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+                <ul id="menu">
+                    <li><a href="index.html">Sobre Mim</a></li>
+                    <li><a href="formacao.html" class="active">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <label for="theme-toggle" class="switch-label">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="formacao" class="content-section">
+            <div class="container">
+                <h2>Formação & Habilidades</h2>
+                
+                <!-- cria um card formação-->
+                <div class="card">
+                    <h3>Formação Educacional</h3>
+                    <ul>
+                        <li>
+                            <strong>Análise e Desenvolvimento de Sistemas</strong> - Uninter (2022 - Previsão 2026)
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- card de cursos -->
+                <div class="card">
+                    <h3>Cursos Complementares</h3>
+                    <ul>
+                        <li>ETL COM INTEGRATION SERVICES: MODELO DE DADOS - Alura (Jun/2022)</li>
+                        <li>PYTHON PANDAS: TRATANDO E ANALISANDO DADOS - Alura (Jun/2022)</li>
+                        <li>SQL (Avançado) - HackerRank (2024)</li>
+                    </ul>
+                </div>
+
+                <!-- card de idiomas -->
+                <div class="card">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Português - Fluente / Nativo</li>
+                        <li>Inglês - Avançado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pablo Roberto Grabarski Molina. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

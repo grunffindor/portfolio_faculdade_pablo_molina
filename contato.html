@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Pagina Contato -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Molina | Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CAbecalho-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">PM.</a>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+                <ul id="menu">
+                    <li><a href="index.html">Sobre Mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <label for="theme-toggle" class="switch-label">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="contato" class="content-section">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p>Tem alguma pergunta ou proposta? Preencha o formulário abaixo.</p>
+                
+                <!-- Formulario de contato  -->
+                <form id="contact-form" class="card" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone (Opcional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+                        <small class="error-message"></small>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- rodape -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pablo Roberto Grabarski Molina. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- 
+       Aviso de mensagem enviada
+    -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content card">
+            <span class="close-button">&times;</span>
+            <h3>Sucesso!</h3>
+            <p>Sua mensagem foi enviada. Obrigado pelo contato!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
